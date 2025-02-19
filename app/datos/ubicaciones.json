@@ -1,0 +1,25 @@
+[
+    {
+        "nombre": "Dixer",
+        "coordenadas": [-38.16078534375839, -58.777741234009575],
+        "descripcion": "Empresa exitosa en el rubro de sistemas",
+        "direccion": "Calle Colón y A. Del Valle, Lobería",
+        "productos": [
+            "Sistemas a medida",
+            "Diseños Web",
+            "Apps para plataformas móviles"
+        ],
+        "imagen": "/imagenes/dixer.png"
+    },
+    {
+        "nombre": "TeslaSur",
+        "coordenadas": [-38.169239953706665, -58.770608067585464],
+        "descripcion": "Empresa de servicios electromecánicos",
+        "direccion": "9 de Julio Nº1098",
+        "productos": [
+            "Tableros de baja y media potencia",
+            "Trabajos en el campo"
+        ],
+        "imagen": "/imagenes/teslasur.png"
+    }
+]
