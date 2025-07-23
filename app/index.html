@@ -1,24 +1,50 @@
-<!-- app/index.html -->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Interactivo</title>
-    <!-- Hoja de estilos de Leaflet -->
+    <title>Mapa Interactivo - Provincias Argentinas</title>
+
+    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <!-- Hoja de estilos personalizada -->
-    <link rel="stylesheet" href="/estilos.css" />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
 <body>
-    <h1>Mapa Interactivo Similar a Trivago</h1>
-    <div id="map"></div>
-    <!-- Script de Leaflet -->
+    <header>
+        <h1>Mapa Interactivo - Provincias Argentinas</h1>
+    </header>
+
+    <main>
+        <section class="controls">
+            <label for="provinciaSelect">
+                <strong>Seleccionar Provincia:</strong>
+            </label>
+            <select id="provinciaSelect">
+                <option value="">-- Seleccione una provincia --</option>
+            </select>
+        </section>
+
+        <section class="contenedor-principal">
+            <div id="map" role="application" aria-label="Mapa interactivo de Argentina"></div>
+
+            <aside id="lista-lugares" class="lista-lateral">
+                <h3>Ubicaciones</h3>
+                <div id="lugares-contenedor">
+                    <p class="texto-ayuda">Seleccione una provincia para ver las ubicaciones</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
     <!-- Script personalizado -->
-    <script src="/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
