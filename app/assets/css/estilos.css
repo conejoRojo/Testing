@@ -1,0 +1,527 @@
+/* css/estilos.css - Mapa Interactivo Provincias Argentinas */
+
+/* ==========================================
+   VARIABLES CSS PERSONALIZADAS
+   ========================================== */
+:root {
+    /* Colores principales */
+    --color-primario: #007bff;
+    --color-primario-hover: #0056b3;
+    --color-secundario: #28a745;
+    --color-peligro: #dc3545;
+    --color-advertencia: #ffc107;
+    --color-info: #17a2b8;
+    --color-morado: #6f42c1;
+    --color-naranja: #fd7e14;
+    --color-gris: #6c757d;
+    
+    /* Colores de fondo */
+    --bg-primario: #ffffff;
+    --bg-secundario: #f8f9fa;
+    --bg-terciario: #e9ecef;
+    --bg-hover: #e3f2fd;
+    --bg-activo: var(--color-primario);
+    --bg-error: #f8d7da;
+    --bg-body: #f5f5f5;
+    
+    /* Colores de texto */
+    --texto-primario: #333333;
+    --texto-secundario: #666666;
+    --texto-terciario: #888888;
+    --texto-ayuda: #999999;
+    --texto-blanco: #ffffff;
+    --texto-error: #721c24;
+    
+    /* Espaciado */
+    --espaciado-xs: 4px;
+    --espaciado-sm: 8px;
+    --espaciado-md: 12px;
+    --espaciado-lg: 20px;
+    --espaciado-xl: 30px;
+    --espaciado-xxl: 40px;
+    
+    /* Bordes */
+    --border-radius: 4px;
+    --border-radius-md: 6px;
+    --border-radius-lg: 8px;
+    --border-color: #ddd;
+    --border-color-focus: var(--color-primario);
+    
+    /* Sombras */
+    --sombra-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --sombra-md: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --sombra-lg: 0 4px 15px rgba(0, 0, 0, 0.2);
+    --sombra-hover: 0 2px 8px rgba(0, 123, 255, 0.2);
+    
+    /* Tipografía */
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --peso-normal: 400;
+    --peso-bold: 700;
+    --tamaño-xs: 11px;
+    --tamaño-sm: 12px;
+    --tamaño-md: 14px;
+    --tamaño-lg: 16px;
+    --tamaño-xl: 18px;
+    
+    /* Transiciones */
+    --transicion-rapida: 0.3s ease;
+    --transicion-lenta: 0.5s ease;
+    
+    /* Z-index */
+    --z-error: 1000;
+    --z-modal: 999;
+}
+
+/* ==========================================
+   ESTILOS BASE PARA DESKTOP
+   ========================================== */
+@media (min-width: 769px) {
+    .contenedor-principal {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        max-width: 1400px;
+        height: 600px;
+        gap: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        overflow: hidden;
+        background: #ffffff;
+    }
+
+    #map {
+        flex: 1;
+        height: 100%;
+        min-width: 0;
+        min-height: 500px;
+    }
+
+    .lista-lateral {
+        width: 350px;
+        background: #ffffff;
+        border-left: 1px solid #ddd;
+        overflow-y: auto;
+        padding: 20px;
+        flex-shrink: 0;
+        height: 100%;
+    }
+}
+
+/* ==========================================
+   RESET Y BASE
+   ========================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-body);
+    line-height: 1.5;
+    color: var(--texto-primario);
+}
+
+/* ==========================================
+   HEADER
+   ========================================== */
+header {
+    width: 100%;
+    text-align: center;
+    margin: var(--espaciado-lg) 0;
+}
+
+h1 {
+    margin: 0;
+    color: var(--texto-primario);
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: var(--peso-bold);
+}
+
+/* ==========================================
+   CONTROLES
+   ========================================== */
+.controls {
+    background: var(--bg-primario);
+    padding: var(--espaciado-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--sombra-md);
+    margin-bottom: var(--espaciado-lg);
+    width: 95%;
+    max-width: 1400px;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: var(--espaciado-sm);
+    color: var(--texto-primario);
+    font-weight: var(--peso-bold);
+}
+
+select {
+    padding: 10px var(--espaciado-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: var(--tamaño-lg);
+    background: var(--bg-primario);
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color var(--transicion-rapida);
+    color: var(--texto-primario);
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--border-color-focus);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+select:hover {
+    border-color: var(--border-color-focus);
+}
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL 
+   ========================================== */
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    max-width: 1400px;
+    height: calc(100vh - 200px);
+    min-height: 700px;
+    gap: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   MAPA
+   ========================================== */
+#map {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    min-width: 400px;
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ==========================================
+   LISTA LATERAL
+   ========================================== */
+.lista-lateral {
+    width: 380px;
+    max-width: 380px;
+    background: #ffffff;
+    border-left: 1px solid #ddd;
+    overflow-y: auto;
+    padding: 25px;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.lista-lateral h3 {
+    margin: 0 0 20px 0;
+    color: var(--texto-primario);
+    font-size: 20px;
+    border-bottom: 2px solid var(--color-primario);
+    padding-bottom: 10px;
+    font-weight: var(--peso-bold);
+}
+
+/* ==========================================
+   ITEMS DE LUGARES
+   ========================================== */
+.lugar-item {
+    background: var(--bg-secundario);
+    border: 1px solid var(--bg-terciario);
+    border-radius: var(--border-radius-md);
+    padding: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all var(--transicion-rapida);
+    position: relative;
+}
+
+.lugar-item:hover {
+    background: var(--bg-hover);
+    border-color: var(--color-primario);
+    transform: translateY(-1px);
+    box-shadow: var(--sombra-hover);
+}
+
+.lugar-item.activo {
+    background: var(--bg-activo);
+    color: var(--texto-blanco);
+    border-color: var(--color-primario-hover);
+    box-shadow: var(--sombra-md);
+}
+
+.lugar-item:focus {
+    outline: 2px solid var(--color-primario);
+    outline-offset: 2px;
+}
+
+.lugar-nombre {
+    font-weight: var(--peso-bold);
+    font-size: 15px;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.lugar-direccion {
+    font-size: 13px;
+    color: var(--texto-secundario);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.lugar-item.activo .lugar-direccion {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.lugar-productos {
+    font-size: 12px;
+    color: var(--texto-terciario);
+    line-height: 1.3;
+}
+
+.lugar-item.activo .lugar-productos {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ==========================================
+   TEXTO DE AYUDA
+   ========================================== */
+.texto-ayuda {
+    color: var(--texto-ayuda);
+    font-style: italic;
+    text-align: center;
+    margin: var(--espaciado-xl) 0;
+    padding: var(--espaciado-lg);
+    background: var(--bg-secundario);
+    border-radius: var(--border-radius);
+    border: 1px dashed var(--border-color);
+}
+
+/* ==========================================
+   MENSAJES DE ERROR
+   ========================================== */
+.error {
+    background-color: var(--bg-error);
+    color: var(--texto-error);
+    padding: 10px var(--espaciado-md);
+    border-radius: var(--border-radius);
+    margin: 10px 0;
+    border: 1px solid #f5c6cb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error button {
+    background: none;
+    border: none;
+    font-size: var(--tamaño-xl);
+    cursor: pointer;
+    color: var(--texto-error);
+    padding: 0;
+    margin-left: 10px;
+    line-height: 1;
+}
+
+.error button:hover {
+    opacity: 0.7;
+}
+
+/* ==========================================
+   LOADING
+   ========================================== */
+.loading {
+    text-align: center;
+    padding: var(--espaciado-xl);
+    color: var(--texto-secundario);
+    font-style: italic;
+}
+
+/* ==========================================
+   ANIMACIONES
+   ========================================== */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   PERSONALIZACIÓN DE LEAFLET
+   ========================================== */
+.leaflet-popup-content-wrapper {
+    border-radius: var(--border-radius-lg) !important;
+    box-shadow: var(--sombra-lg) !important;
+}
+
+.leaflet-popup-tip {
+    background: var(--bg-primario) !important;
+}
+
+.popup-personalizado .leaflet-popup-content {
+    margin: var(--espaciado-lg) !important;
+}
+
+.popup-contenido {
+    font-family: var(--fuente-principal);
+    line-height: 1.4;
+}
+
+.popup-contenido h3 {
+    border-bottom: 2px solid var(--bg-terciario);
+    padding-bottom: var(--espaciado-xs);
+    margin-bottom: 10px;
+}
+
+.popup-contenido a {
+    text-decoration: none;
+    color: var(--color-primario);
+    transition: color var(--transicion-rapida);
+}
+
+.popup-contenido a:hover {
+    text-decoration: underline;
+    color: var(--color-primario-hover);
+}
+
+/* ==========================================
+   RESPONSIVO
+   ========================================== */
+@media (min-width: 1200px) {
+    .contenedor-principal {
+        max-width: 1600px;
+        height: calc(100vh - 180px);
+        min-height: 800px;
+    }
+    
+    .lista-lateral {
+        width: 420px;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .contenedor-principal {
+        width: 98%;
+        height: calc(100vh - 220px);
+        min-height: 650px;
+    }
+    
+    .lista-lateral {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 80vh;
+        width: 98% !important;
+    }
+    
+    #map {
+        height: 450px !important;
+        width: 100% !important;
+        flex: none !important;
+        min-height: 400px !important;
+    }
+    
+    .lista-lateral {
+        width: 100% !important;
+        max-width: 100% !important;
+        border-left: none !important;
+        border-top: 1px solid #ddd;
+        max-height: 350px;
+        height: auto !important;
+        padding: 20px !important;
+    }
+}
+
+/* ==========================================
+   UTILIDADES
+   ========================================== */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* ==========================================
+   ACCESIBILIDAD
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ==========================================
+   OPTIMIZACIONES PARA DESKTOP
+   ========================================== */
+@media (min-width: 769px) {
+    body {
+        padding: 0 20px;
+    }
+    
+    main {
+        width: 100%;
+        max-width: none;
+    }
+}

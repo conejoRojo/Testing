@@ -1,0 +1,362 @@
+/* assets/css/mapa.css - Estilos específicos para el mapa y popups */
+
+/* ==========================================
+   VARIABLES CSS PARA EL MAPA
+   ========================================== */
+:root {
+    --mapa-primary: #86d500;
+    --mapa-primary-hover: #75c400;
+    --mapa-secondary: #f8f9fa;
+    --mapa-border: #ddd;
+    --mapa-text: #333;
+    --mapa-text-light: #666;
+    --mapa-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --mapa-shadow-hover: 0 4px 15px rgba(134, 213, 0, 0.2);
+    --mapa-transition: all 0.3s ease;
+}
+
+/* ==========================================
+   CONTENEDOR DEL MAPA
+   ========================================== */
+#map {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+/* ==========================================
+   PERSONALIZACIÓN DE LEAFLET
+   ========================================== */
+.leaflet-container {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 12px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.leaflet-popup-content {
+    margin: 0 !important;
+    padding: 20px !important;
+    line-height: 1.5 !important;
+    min-width: 250px !important;
+    max-width: 350px !important;
+}
+
+.leaflet-popup-tip {
+    background: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaflet-popup-close-button {
+    color: #999 !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding: 8px !important;
+    width: auto !important;
+    height: auto !important;
+    line-height: 1 !important;
+}
+
+.leaflet-popup-close-button:hover {
+    color: var(--mapa-primary) !important;
+    background: transparent !important;
+}
+
+/* ==========================================
+   CONTENIDO DE POPUPS
+   ========================================== */
+.popup-contenido {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--mapa-text);
+    line-height: 1.6;
+}
+
+.popup-contenido h3 {
+    margin: 0 0 12px 0 !important;
+    color: var(--mapa-primary) !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    border-bottom: 2px solid #f0f0f0 !important;
+    padding-bottom: 8px !important;
+}
+
+.popup-contenido p {
+    margin: 8px 0 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+.popup-contenido strong {
+    color: var(--mapa-text) !important;
+    font-weight: 600 !important;
+}
+
+.popup-contenido a {
+    color: var(--mapa-primary) !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    transition: var(--mapa-transition) !important;
+}
+
+.popup-contenido a:hover {
+    color: var(--mapa-primary-hover) !important;
+    text-decoration: underline !important;
+}
+
+/* Estilos para información de contacto */
+.popup-contenido p[style*="italic"] {
+    background: rgba(134, 213, 0, 0.1) !important;
+    padding: 6px 10px !important;
+    border-radius: 4px !important;
+    margin: 10px 0 !important;
+}
+
+/* Separador de productos/servicios */
+.popup-contenido div[style*="border-top"] {
+    border-top: 1px solid #e9ecef !important;
+    margin-top: 15px !important;
+    padding-top: 12px !important;
+}
+
+/* ==========================================
+   MARCADORES PERSONALIZADOS
+   ========================================== */
+.marcador-personalizado {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.marcador-personalizado:hover {
+    box-shadow: 0 4px 12px rgba(134, 213, 0, 0.4) !important;
+}
+
+/* Evitar transformaciones problemáticas */
+.leaflet-marker-icon {
+    transition: none !important;
+}
+
+.leaflet-marker-icon:hover {
+    transform: none !important;
+}
+
+.leaflet-marker-shadow {
+    display: none !important;
+}
+
+/* Posicionamiento correcto del icono */
+.leaflet-marker-pane img {
+    transform-origin: center bottom !important;
+}
+
+/* ==========================================
+   CONTROLES DE LEAFLET
+   ========================================== */
+.leaflet-control-zoom {
+    border: none !important;
+    box-shadow: var(--mapa-shadow) !important;
+}
+
+.leaflet-control-zoom a {
+    background-color: #ffffff !important;
+    border: 1px solid var(--mapa-border) !important;
+    color: var(--mapa-text) !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    transition: var(--mapa-transition) !important;
+}
+
+.leaflet-control-zoom a:hover {
+    background-color: var(--mapa-primary) !important;
+    color: #ffffff !important;
+    border-color: var(--mapa-primary) !important;
+}
+
+.leaflet-control-attribution {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 4px !important;
+    font-size: 11px !important;
+    padding: 2px 6px !important;
+}
+
+/* ==========================================
+   LOADING Y ESTADOS
+   ========================================== */
+.leaflet-tile-container {
+    transition: opacity 0.3s ease !important;
+}
+
+.leaflet-zoom-anim .leaflet-zoom-animated {
+    transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) !important;
+}
+
+/* ==========================================
+   TOOLTIPS
+   ========================================== */
+.leaflet-tooltip {
+    background: var(--mapa-primary) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    color: #ffffff !important;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    padding: 6px 10px !important;
+    box-shadow: var(--mapa-shadow) !important;
+}
+
+.leaflet-tooltip-bottom:before {
+    border-bottom-color: var(--mapa-primary) !important;
+}
+
+.leaflet-tooltip-top:before {
+    border-top-color: var(--mapa-primary) !important;
+}
+
+.leaflet-tooltip-left:before {
+    border-left-color: var(--mapa-primary) !important;
+}
+
+.leaflet-tooltip-right:before {
+    border-right-color: var(--mapa-primary) !important;
+}
+
+/* ==========================================
+   ANIMACIONES
+   ========================================== */
+@keyframes marker-bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.marker-bounce {
+    animation: marker-bounce 1s ease-in-out;
+}
+
+@keyframes popup-appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.leaflet-popup {
+    animation: popup-appear 0.3s ease-out;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+@media (max-width: 768px) {
+    #map {
+        min-height: 400px;
+    }
+    
+    .leaflet-popup-content {
+        min-width: 200px !important;
+        max-width: 280px !important;
+        padding: 15px !important;
+    }
+    
+    .popup-contenido h3 {
+        font-size: 16px !important;
+    }
+    
+    .popup-contenido p {
+        font-size: 13px !important;
+    }
+    
+    .leaflet-control-zoom {
+        margin: 10px !important;
+    }
+    
+    .leaflet-control-zoom a {
+        width: 35px !important;
+        height: 35px !important;
+        line-height: 33px !important;
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #map {
+        min-height: 350px;
+    }
+    
+    .leaflet-popup-content {
+        min-width: 180px !important;
+        max-width: 250px !important;
+        padding: 12px !important;
+    }
+    
+    .popup-contenido h3 {
+        font-size: 15px !important;
+    }
+    
+    .popup-contenido p {
+        font-size: 12px !important;
+    }
+}
+
+/* ==========================================
+   ACCESIBILIDAD
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+    .leaflet-zoom-anim .leaflet-zoom-animated,
+    .leaflet-tile-container,
+    .marcador-personalizado,
+    .marcador-letra,
+    .leaflet-popup {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Mejoras de contraste para accesibilidad */
+@media (prefers-contrast: high) {
+    .popup-contenido {
+        border: 2px solid var(--mapa-text) !important;
+    }
+    
+    .leaflet-control-zoom a {
+        border-width: 2px !important;
+    }
+}
+
+/* ==========================================
+   PRINT STYLES
+   ========================================== */
+@media print {
+    #map {
+        height: 400px !important;
+        break-inside: avoid;
+    }
+    
+    .leaflet-control-zoom,
+    .leaflet-popup-close-button {
+        display: none !important;
+    }
+    
+    .leaflet-popup-content-wrapper {
+        box-shadow: none !important;
+        border: 1px solid #000 !important;
+    }
+}

@@ -1,50 +1,497 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Nutrien Ag Solutions | Acercamos soluciones integrales e innovadoras a cada productor.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Interactivo - Provincias Argentinas</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+		<!-- ========================= CSS here ========================= -->
+		<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+        <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/tiny-slider.css">
+		<link rel="stylesheet" href="assets/css/glightbox.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="css/estilos.css" />
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/umk8lid.css">
 
-<body>
-    <header>
-        <h1>Mapa Interactivo - Provincias Argentinas</h1>
-    </header>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-    <main>
-        <section class="controls">
-            <label for="provinciaSelect">
-                <strong>Seleccionar Provincia:</strong>
-            </label>
-            <select id="provinciaSelect">
-                <option value="">-- Seleccione una provincia --</option>
-            </select>
-        </section>
-
-        <section class="contenedor-principal">
-            <div id="map" role="application" aria-label="Mapa interactivo de Argentina"></div>
-
-            <aside id="lista-lugares" class="lista-lateral">
-                <h3>Ubicaciones</h3>
-                <div id="lugares-contenedor">
-                    <p class="texto-ayuda">Seleccione una provincia para ver las ubicaciones</p>
+        <!-- ========================= preloader start ========================= -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="spinner">
+                    <div class="spinner-container">
+                        <div class="spinner-rotator">
+                            <div class="spinner-left">
+                                <div class="spinner-circle"></div>
+                            </div>
+                            <div class="spinner-right">
+                                <div class="spinner-circle"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </aside>
+            </div>
+        </div>
+        <!-- preloader end -->
+
+        <!-- ========================= header start ========================= -->
+        <header class="header navbar-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/img/logo/nutrien_ag_solutions.svg" alt="Nutrien Ag Solutions" width="125">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+
+                                        <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
+                                        id="productosToggle"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-1-1"
+                                        aria-controls="navbarSupportedContent"
+                                        aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        PRODUCTOS
+                                        </a>
+
+                                        <ul class="sub-menu collapse" id="submenu-1-1">
+                                            <li class="nav-item"><a href="producto.html#nutricion">NUTRICIÓN DE CULTIVOS</a></li>
+                                            <li class="nav-item"><a href="producto.html#proteccion">PROTECCIÓN DE CULTIVOS</a></li>
+                                            <li class="nav-item"><a href="producto.html#semillas">SEMILLAS</a></li>
+                                            <li class="nav-item"><a href="producto.html#loveland">LOVELAND</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
+                                            id="serviciosToggle"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-2"
+                                            aria-controls="navbarSupportedContent"
+                                            aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            SERVICIOS
+                                            </a>
+
+                                       <ul class="sub-menu collapse" id="submenu-1-2">
+                                            <li class="nav-item"><a href="servicios.html#aplicaciones-estrategicas">APLICACIONES</a></li>
+                                            <li class="nav-item"><a href="servicios.html#asesoramiento">ASESORAMIENTO</a></li>
+                                            <li class="nav-item"><a href="servicios.html#agronomia-digital">MUESTREO</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="compromiso-con-la-comunidad.html">COMPROMISO CON LA COMUNIDAD</a>
+                                    </li>
+                                    <li class="nav-item">
+                                                <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
+                                                id="nosotrosToggle"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#submenu-1-3"
+                                                aria-controls="navbarSupportedContent"
+                                                aria-expanded="false"
+                                                aria-label="Toggle navigation">
+                                                NOSOTROS
+                                                </a>
+
+                                        <ul class="sub-menu collapse" id="submenu-1-3">
+                                            <li class="nav-item"><a href="nosotros.html#nosotros">SOMOS NUTRIEN</a></li>
+                                            <li class="nav-item"><a href="nosotros.html#sumate">SUMATE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="agrocentros.html">AGROCENTROS</a>
+                                    </li>
+                                    <!--<li class="nav-item">
+                                        <a class="page-scroll" href="#">NEWS</a>
+                                    </li>-->
+                                     <li class="nav-item">
+                                        <a class="icono" href="index.html#comunicate"><img src="assets/img/icono-contacto.svg" width="23"></a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        
+        </header>
+        <!-- ========================= header end ========================= -->
+
+        <!-- ========================= hero-section start ========================= -->
+        <section id="home" class="video-home-nutrien">
+            <div class="container-fluid">
+                <div class="col-bajada align-items-center">
+                    <div class="section-title">
+                            <img src="assets/img/30-anios-creciendo-con-vos.svg" width="300">
+                            <p class="text-white wow fadeInUp" data-wow-delay=".6s">Acercamos soluciones integrales e innovadoras a cada productor.</p>
+                        <a href="https://www.youtube.com/@nutrienagsolutionsargentin9173" class="theme-btn-s violeta" target="_blank">VER VIDEO COMPLETO</a>
+                        </div>
+                </div>
+                <div class="col-video">
+                    <video 
+                    src="assets/nutrien_ag_argentina.mp4" 
+                    autoplay 
+                    muted 
+                    playsinline 
+                    loop 
+                    preload="auto">
+                    </video>
+                </div>
+            </div>
         </section>
-    </main>
+        <!-- ========================= hero-section end ========================= -->
 
-    <!-- Leaflet JavaScript -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <!-- ========================= productos-section start ========================= -->
+        <section class="feature-section pt-70" style="background: url('assets/img/bg/bg-puntos.png') no-repeat; background-size: 100%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="section-title mb-55">
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">PRODUCTOS</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">Ofrecemos un amplio portfolio de insumos para nutrición, protección de cultivos y semillas con genética de primer nivel.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Script personalizado -->
-    <script src="js/script.js" defer></script>
-</body>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box box-style text-center">
+                            <div class="feature-icon box-icon-style">
+                             <img src="assets/img/nutricionales.svg">
+                            </div>
+                            <div class="box-content-style feature-content">
+                                <h4>Nutrición de cultivos</h4>
+                                <p>Fertilizantes y tecnologías adaptadas a las necesidades de cada cultivo y ambiente.​</p>
+                                <span class="dk"><br><br></span>​                                
+                                <a href="producto.html#nutricion" class="theme-btn-s verde">+ INFORMACIÓN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box box-style text-center">
+                            <div class="feature-icon box-icon-style">
+                             <img src="assets/img/proteccion.svg">
+                            </div>
+                            <div class="box-content-style feature-content">
+                                <h4>Protección de cultivos</h4>
+                                <p>Herbicidas, fungicidas e insecticidas que aseguran los mejores resultados.</p>
+                                <span class="dk"><br><br></span>​
+                                <a href="producto.html#proteccion" class="theme-btn-s azul">+ INFORMACIÓN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box box-style text-center">
+                            <div class="feature-icon box-icon-style">
+                             <img src="assets/img/semillas.svg">
+                            </div>
+                            <div class="box-content-style feature-content">
+                                <h4>Semillas</h4>
+                                <p>Híbridos de maíz y girasol de alto rendimiento, con tecnología avanzada y una gran adaptabilidad a distintas regiones y fechas de siembra.</p>
+                                <a href="producto.html#semillas" class="theme-btn-s marron">+ INFORMACIÓN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= productos-section end ========================= -->
 
+                <!-- ========================= servicios-section start ========================= -->
+        <section class="feature-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="section-title mb-55">
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">SERVICIOS</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">Combinamos tecnología y precisión para un diagnóstico certero y una aplicación eficiente de nutrientes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box box-style text-center">
+                            <div class="feature-icon box-icon-style">
+                             <img src="assets/img/diagnostico.svg">
+                            </div>
+                            <div class="box-content-style feature-content">
+                                <h4>Agronomía Digital</h4>
+                                <p>Integrar toda la información del campo en un solo lugar.​​</p>
+                                <a href="servicios.html#agronomia-digital" class="theme-btn-s violeta">+ INFORMACIÓN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box box-style text-center">
+                            <div class="feature-icon box-icon-style">
+                             <img src="assets/img/aplicaciones.svg">
+                            </div>
+                            <div class="box-content-style feature-content">
+                                <h4>Aplicaciones</h4>
+                                <p>Una de las flotas tecnológicas más completas del país.​​</p>
+                                <a href="servicios.html#aplicaciones-estrategicas" class="theme-btn-s violeta">+ INFORMACIÓN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box box-style text-center">
+                            <div class="feature-icon box-icon-style">
+                             <img src="assets/img/muestro.svg">
+                            </div>
+                            <div class="box-content-style feature-content">
+                                <h4>Asesoramiento</h4>
+                                <p>Muestreo de suelos y tejidos vegetales para un diagnóstico preciso.</p>
+                                <a href="servicios.html#asesoramiento" class="theme-btn-s violeta">+ INFORMACIÓN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= servicios-section end ========================= -->
+
+        <!-- ========================= agrocentros-section start ========================= -->
+        <section id="contact" class="contact-section cta-bg img-bg pt-70 pb-70" style="background-image: url('assets/img/bg/agrocentros-bg.png');">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="section-title">
+                            <h4 class="mb-25 wow fadeInDown text-white" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">AGROCENTROS</h4>
+                            <h2 class="text-white wow fadeInUp" data-wow-delay=".4s"><strong>ESTAMOS PRESENTES EN </strong> EN LAS ZONAS MÁS PRODUCTIVAS DEL PAÍS.</h2>
+                            <p class="text-white wow fadeInUp" data-wow-delay=".6s">Nuestros 38 agrocentros son puntos de encuentro entre productores y consultores técnicos, donde se construyen decisiones estratégicas para lograr la máxima productividad en cada lote.</p>
+                            <a href="agrocentros.html" class="theme-btn-s violeta"><i class="lni lni-telegram-original"></i> ENCONTRANOS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= contact-section end ========================= -->
+
+        <!-- ========================= pricing-section start ========================= -->
+        <section id="redes" class="pricing-section pt-70 pb-70">
+            <div class="container">
+             <div class="row">
+                <div class="col-lg-6">
+                <div class="section-title mb-55">
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">SEGUINOS EN INSTAGRAM</h2>
+                 </div>
+                 <!-- Elfsight Instagram Feed | NUTRIEN -->
+                    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                    <div class="elfsight-app-e25e1fde-6550-4bfe-af0e-c5d2984753be" data-elfsight-app-lazy></div>
+                </div>
+                <div class="col-lg-6 canal-yt">
+                <div class="section-title mb-55">
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">CONOCÉ NUESTRO CANAL DE YOUTUBE</h2>
+                </div>
+                <!-- Elfsight YouTube Gallery | Untitled YouTube Gallery -->
+                    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                    <div class="elfsight-app-1d17aeac-d96f-49be-9d37-fe8d9d6ee6b5" data-elfsight-app-lazy></div>
+                </div>
+             </div>
+            </div>
+        </section>
+        <!-- ========================= pricing-section end ========================= -->
+
+       <!-- ========================= compromiso-section start ========================= -->
+        <section id="contact" class="compromiso-section cta-bg img-bg pt-135 pb-70" style="background-image: url('assets/img/bg/compromiso-con-la-comunidad-bg.png'); background-position: top;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-7">
+                        <div class="section-title">
+                            <h2 class="text-white wow fadeInUp" data-wow-delay=".4s"><strong>COMPROMISO CON</strong><br> LA <strong class="cursiva">COMUNIDAD</strong></h2>
+                            <p class="text-white wow fadeInUp" data-wow-delay=".6s">Trabajamos junto a las comunidades donde operamos, acompañando su crecimiento con proyectos de gran aporte social.</p>
+                            <a href="compromiso-con-la-comunidad.html" class="theme-btn-s violeta">CONOCÉ MÁS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= contact-section end ========================= -->
+
+
+        <!-- ========================= subscribe-section start ========================= -->
+        <section id="comunicate" class="subscribe-section pt-70 pb-70 img-bg" style="background-image: url('assets/img/bg/comunicate-con-nosotros-bg.jpeg')">
+            <div class="container">
+                <div class="service-box box-style m-0 pt-5">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="section-title mb-30">
+                            <h2 class="mb-40 wow fadeInUp" data-wow-delay=".4s">¿NECESITÁS <strong>MÁS INFORMACIÓN?</strong></h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">Si querés saber más sobre nuestra empresa, productos o servicios, comunicate con nosotros.​</p>
+                            <p class="mt-3"><strong>OFICINA CENTRAL:</strong> Av. del Libertador 101 Piso 11, Vicente López, Provincia de Buenos Aires, Argentina. <a href="https://maps.app.goo.gl/J6dqPBHQPoKXCPAPA" target="_blank" style="color: #86d500;">Ver mapa</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="contact-form-wrapper">
+                            <form action="assets/php/mail.php" class="contact-form" novalidate>
+                                <input type="text" name="website_url" id="website_url" style="display:none;" autocomplete="off" tabindex="-1">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" id="name" placeholder="Nombre" required="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" id="phone" placeholder="Teléfono" required="">
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" id="email" placeholder="Email" required="">
+                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="subject" id="subject" placeholder="Asunto" required="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <textarea name="message" id="message" placeholder="Mensaje" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="button text-center">
+                                            <button type="submit" class="theme-btn-s verde mt-0">ENVIAR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= subscribe-section end ========================= -->
+
+        <!-- ========================= footer start ========================= -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-4 wow fadeInLeft" data-wow-delay=".2s">
+                            <a href="index.html" class="logo mb-30"><img src="assets/img/logo/nutrien_ag_solutions_2.svg" alt="logo" width="130"></a>
+                            <p class="mb-30 footer-desc">Av. del Libertador 101 Piso 11, Vicente López,<br> Provincia de Buenos Aires</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6">
+                        <div class="footer-widget mb-4 wow fadeInUp" data-wow-delay=".4s">
+                            <h4>LINKS RÁPIDOS</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="producto.html">Productos</a>
+                                </li>
+                                <li>
+                                    <a href="servicios.html">Servicios</a>
+                                </li>
+                                <li>
+                                    <a href="compromiso-con-la-comunidad.html">Compromiso con la comunidad</a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6">
+                        <div class="footer-widget mb-4 wow fadeInUp" data-wow-delay=".6s">
+                            <h4>ACERCA DE</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="nosotros.html">Nosotros</a>
+                                </li>
+                                <li>
+                                    <a href="nosotros.html">Sumate a Nutrien</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6">
+                        <div class="footer-widget mb-4 wow fadeInRight" data-wow-delay=".8s">
+                            <h4>CONTACTO</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#">Formulario de contacto</a>
+                                </li>
+                                <li>
+                                    <a href="#">Politica de privacidad</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6">
+                        <div class="footer-widget mb-4 wow fadeInRight" data-wow-delay=".8s">
+                            <h4>UBICACIONES</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="agrocentros.html">Agrocentros</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright-area">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <h4>SEGUINOS</h4>
+                            <div class="footer-social-links mt-4">
+                                <ul class="d-flex">
+                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <p class="wow fadeInUp" data-wow-delay=".3s">@2025 Nutrien Ag Solutions, Inc. Reservados todos los derechos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ========================= footer end ========================= -->
+
+        <!-- ========================= scroll-top ========================= -->
+        <a href="#" class="scroll-top">
+            <i class="lni lni-arrow-up"></i>
+        </a>
+        
+		<!-- ========================= JS here ========================= -->
+		<script src="assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
+		<script src="assets/js/contact-form-secure.js"></script>
+        <script src="assets/js/count-up.min.js"></script>
+        <script src="assets/js/tiny-slider.js"></script>
+        <script src="assets/js/isotope.min.js"></script>
+        <script src="assets/js/glightbox.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/imagesloaded.min.js"></script>
+		<script src="assets/js/main.js"></script>
+        <script src="assets/js/desplegable.js"></script>
+    </body>
 </html>

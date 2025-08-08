@@ -1,0 +1,53 @@
+{"time":"2025-07-29 13:40:37","message":"Inicio del proceso","data":{"method":"GET"}}
+{"time":"2025-07-29 13:50:24","message":"Inicio del proceso","data":{"method":"POST"}}
+{"time":"2025-07-29 13:50:24","message":"Content-Type recibido","data":{"content_type":"multipart\/form-data; boundary=----WebKitFormBoundaryA94YHsPgA6cdQPeI"}}
+{"time":"2025-07-29 13:50:24","message":"IP detectada","data":{"ip":"45.181.47.231"}}
+{"time":"2025-07-29 13:50:24","message":"Validando CSRF","data":{"token_present":true,"method":"POST"}}
+{"time":"2025-07-29 13:50:24","message":"Datos recibidos","data":{"name":"lOUS","email":"gas@gmlc.omo","phone":"6465154654","subject":"tese","message_length":31}}
+{"time":"2025-07-29 13:50:24","message":"Preparando env\u00edo con PHPMailer","data":{"to":"gastiarena@gmail.com","subject":"[Nutrien] Consulta desde web: tese"}}
+{"time":"2025-07-29 13:50:26","message":"Error PHPMailer","data":{"error":"SMTP Error: Could not connect to SMTP host. Failed to connect to server"}}
+{"time":"2025-07-29 13:50:26","message":"Excepci\u00f3n capturada","data":{"error":"Error al enviar el email: SMTP Error: Could not connect to SMTP host. Failed to connect to server","trace":"#0 {main}"}}
+{"time":"2025-07-29 13:53:33","message":"Inicio del proceso","data":{"method":"POST"}}
+{"time":"2025-07-29 13:53:33","message":"Content-Type recibido","data":{"content_type":"multipart\/form-data; boundary=----WebKitFormBoundarytVQAYzKhTRdjAViL"}}
+{"time":"2025-07-29 13:53:33","message":"IP detectada","data":{"ip":"45.181.47.231"}}
+{"time":"2025-07-29 13:53:33","message":"Validando CSRF","data":{"token_present":true,"method":"POST"}}
+{"time":"2025-07-29 13:53:33","message":"Datos recibidos","data":{"name":"lUIS","email":"GASLSDJK@ASDLFGJL.COM","phone":"6464869","subject":"SDTET","message_length":22}}
+{"time":"2025-07-29 13:53:33","message":"Spam detectado","data":{"ip":"45.181.47.231","name":"lUIS","email":"GASLSDJK@ASDLFGJL.COM"}}
+{"time":"2025-07-29 13:53:46","message":"Inicio del proceso","data":{"method":"POST"}}
+{"time":"2025-07-29 13:53:46","message":"Content-Type recibido","data":{"content_type":"multipart\/form-data; boundary=----WebKitFormBoundarySFFQoKP6qgJfnKjG"}}
+{"time":"2025-07-29 13:53:46","message":"IP detectada","data":{"ip":"45.181.47.231"}}
+{"time":"2025-07-29 13:53:46","message":"Validando CSRF","data":{"token_present":true,"method":"POST"}}
+{"time":"2025-07-29 13:53:46","message":"Datos recibidos","data":{"name":"lUIS","email":"gastiarena@galc.com","phone":"6464869","subject":"SDTET","message_length":22}}
+{"time":"2025-07-29 13:53:46","message":"Spam detectado","data":{"ip":"45.181.47.231","name":"lUIS","email":"gastiarena@galc.com"}}
+{"time":"2025-07-29 13:54:01","message":"Inicio del proceso","data":{"method":"POST"}}
+{"time":"2025-07-29 13:54:01","message":"Content-Type recibido","data":{"content_type":"multipart\/form-data; boundary=----WebKitFormBoundaryZ940gJiAUeBJJ5Gt"}}
+{"time":"2025-07-29 13:54:01","message":"IP detectada","data":{"ip":"45.181.47.231"}}
+{"time":"2025-07-29 13:54:01","message":"Validando CSRF","data":{"token_present":true,"method":"POST"}}
+{"time":"2025-07-29 13:54:01","message":"Datos recibidos","data":{"name":"lUIS","email":"gastiarena@galc.com","phone":"6464869","subject":"SDTET","message_length":15}}
+{"time":"2025-07-29 13:54:01","message":"Preparando env\u00edo con PHPMailer","data":{"to":"gastiarena@gmail.com","subject":"[Nutrien] Consulta desde web: SDTET"}}
+{"time":"2025-07-29 13:54:02","message":"Error PHPMailer","data":{"error":"SMTP Error: Could not connect to SMTP host. Failed to connect to server"}}
+{"time":"2025-07-29 13:54:02","message":"Excepci\u00f3n capturada","data":{"error":"Error al enviar el email: SMTP Error: Could not connect to SMTP host. Failed to connect to server","trace":"#0 {main}"}}
+{"time":"2025-07-29 13:56:52","message":"Inicio del proceso","data":{"method":"POST"}}
+{"time":"2025-07-29 13:56:52","message":"Content-Type recibido","data":{"content_type":"multipart\/form-data; boundary=----WebKitFormBoundaryo8bHg4oce8OmLVAe"}}
+{"time":"2025-07-29 13:56:52","message":"IP detectada","data":{"ip":"45.181.47.231"}}
+{"time":"2025-07-29 13:56:52","message":"Validando CSRF","data":{"token_present":true,"method":"POST"}}
+{"time":"2025-07-29 13:56:52","message":"Datos recibidos","data":{"name":"teste","email":"test@gmlaic.com","phone":"65468469878","subject":"test","message_length":29}}
+{"time":"2025-07-29 13:56:52","message":"Preparando env\u00edo con PHPMailer","data":{"to":"gastiarena@gmail.com","subject":"[Nutrien] Consulta desde web: test"}}
+{"time":"2025-07-29 13:56:53","message":"Error PHPMailer","data":{"error":"SMTP Error: Could not connect to SMTP host. Failed to connect to server"}}
+{"time":"2025-07-29 13:56:53","message":"Excepci\u00f3n capturada","data":{"error":"Error al enviar el email: SMTP Error: Could not connect to SMTP host. Failed to connect to server","trace":"#0 {main}"}}
+{"time":"2025-07-29 13:59:56","message":"Inicio del proceso","data":{"method":"POST"}}
+{"time":"2025-07-29 13:59:56","message":"Content-Type recibido","data":{"content_type":"multipart\/form-data; boundary=----WebKitFormBoundary73AW0Df1TC3G3IhH"}}
+{"time":"2025-07-29 13:59:56","message":"IP detectada","data":{"ip":"45.181.47.231"}}
+{"time":"2025-07-29 13:59:56","message":"Validando CSRF","data":{"token_present":true}}
+{"time":"2025-07-29 13:59:56","message":"Datos recibidos","data":{"name":"test","email":"gastia@gac.com","phone":"55522225","subject":"test","message_length":30}}
+{"time":"2025-07-29 13:59:56","message":"Intentando enviar email","data":{"to":"gastiarena@gmail.com","subject":"[Nutrien] Consulta desde web: test"}}
+{"time":"2025-07-29 13:59:57","message":"Email enviado exitosamente","data":[]}
+{"time":"2025-07-29 13:59:57","message":"Proceso completado exitosamente","data":[]}
+{"time":"2025-07-30 10:35:45","message":"Inicio del proceso","data":{"method":"POST"}}
+{"time":"2025-07-30 10:35:45","message":"Content-Type recibido","data":{"content_type":"multipart\/form-data; boundary=----WebKitFormBoundaryKjO8wk9IT2f4NNBf"}}
+{"time":"2025-07-30 10:35:45","message":"IP detectada","data":{"ip":"45.181.47.231"}}
+{"time":"2025-07-30 10:35:45","message":"Validando CSRF","data":{"token_present":true}}
+{"time":"2025-07-30 10:35:45","message":"Datos recibidos","data":{"name":"test","email":"gastiarena@gmail.com","phone":"79846546","subject":"test","message_length":29}}
+{"time":"2025-07-30 10:35:45","message":"Intentando enviar email","data":{"to":"gastiarena@gmail.com","subject":"[Nutrien] Consulta desde web: test"}}
+{"time":"2025-07-30 10:35:45","message":"Email enviado exitosamente","data":[]}
+{"time":"2025-07-30 10:35:45","message":"Proceso completado exitosamente","data":[]}

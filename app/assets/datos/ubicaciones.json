@@ -1,0 +1,518 @@
+[
+    {
+        "nombre": "ALBERDI",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -34.4362798025536,
+            -61.81055613200137
+        ],
+        "region": "Buenos Aires / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion Alberdi (CP 6034) - Alberdi - Bs. As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "CUCHA CUCHA",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -34.62132286782274,
+            -60.41150505821957
+        ],
+        "region": "Buenos Aires / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "CUCHA CUCHA Ruta Nacional Nro. 7 - Km. 200,5 Pcia de Bs As.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "EL ARBOLITO",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -33.91413277615219,
+            -60.94073970784913
+        ],
+        "region": "Buenos Aires / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion El Arbolito - El arbolito (CP 2721) V. Pomar - Bs. As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "FRENCH",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -35.51379479395323,
+            -60.998996821795586
+        ],
+        "region": "Buenos Aires / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion French (CP 6516) - French - Bs. As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "LINCOLN",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -34.86077635678056,
+            -61.49711492140262
+        ],
+        "region": "Buenos Aires / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta Provincial 50 y continuación Avenida Menarvino - Lincoln, Bs As.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "MECHITA",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -35.07152137915771,
+            -60.41349036081087
+        ],
+        "region": "Buenos Aires / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Av. Quintana s/n°, Mechita , Bragado , Bs. As. Argentina - CP 6648",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "O´HIGGINS",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -34.5811862632718,
+            -60.69715024017503
+        ],
+        "region": "Buenos Aires / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion O´Higgins (CP 6748) - O´Higgins - Bs.As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "SALTO (DEPÓSITO)",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -34.30038483185553,
+            -60.22708168967654
+        ],
+        "region": "Buenos Aires / Región CENTRO",
+        "descripcion": "DEPÓSITO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Av. Italia 690, Salto (2741).",
+        "imagen": "./assets/img/nutrien-depos.svg"
+    },
+    {
+        "nombre": "SAN ANTONIO DE ARECO",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -34.25784444540097,
+            -59.48204337341123
+        ],
+        "region": "Buenos Aires / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion S.A. de Areco - (CP 2760) - Carlos Merti - San Antonio de Areco- Bs.As.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "30 DE AGOSTO",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -36.27729723589127,
+            -62.54898757069011
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estancia 30 de Agosto (CP 6405) - 30 de Agosto- Bs.As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "AMERICA",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -35.48433024919245,
+            -62.972538053025104
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion America - Carlos Diehl (CP 6237) America- Bs.As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "BALCARCE",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -37.83206999190753,
+            -58.2634891472013
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion Balcarce - (CP 7620) Balcarce - Bs.As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "BOLIVAR",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -36.20139530992675,
+            -61.13711067629233
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Parque Industrial Bolivar - Esq Ruta 65 y Acceso (CP 6550) - Bolivar - Bs.As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "COLONIA HINOJO",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -36.87072780738061,
+            -60.1904376722564
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Colonia Hinojo - Prolong. Av. Fundadores (Camino a Sierra Chica) - (CP 7318)- Col. Hinojo. Bs.As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "CORONEL SUAREZ",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -37.49308899563185,
+            -61.94318502415016
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta 85 y Acceso a Colonia 1(CP 7540) - Coronel Suarez - Bs.As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "GARDEY",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -37.28272277025796,
+            -59.355603994831135
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion Gardey (CP 7003) - Gardey - Bs. As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "GENERAL VILLEGAS (DEPÓSITO)",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -35.046327017715534,
+            -63.00395844004166
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "DEPÓSITO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta Nacional 188 Km 362, Gral Villegas,  Bs. As. Prov.",
+        "imagen": "./assets/img/nutrien-depos.svg"
+    },
+    {
+        "nombre": "PIERES",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -38.394940078168695,
+            -58.67108295211489
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion Pieres Ruta 227 Km17,5  - (CP 7633) - Pieres - Bs. As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "TRENQUE LAUQUEN (DEPÓSITO)",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -35.9913680557198,
+            -62.72097636282891
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "DEPÓSITO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Trenque Lauquen - Garcia Salina 2225 (CP 6400) - Trenque Lauquen - Bs.As. Prov.",
+        "imagen": "./assets/img/nutrien-depos.svg"
+    },
+    {
+        "nombre": "TRES ARROYOS (Predio)",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -38.386578340903036,
+            -60.273947459526724
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion Tres Arroyo - Av. Del Trabajador 601-(CP 7500) - Tres Arroyos- Bs.As.Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "TRES ARROYOS (Ruta)",
+        "provincia": "Buenos Aires",
+        "coordenadas": [
+            -38.383934387061714,
+            -60.314941045933026
+        ],
+        "region": "Buenos Aires / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta Nac. 3 Km 496 (7500) Tres Arroyos, Bs. As. Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "LA CARLOTA",
+        "provincia": "Córdoba",
+        "coordenadas": [
+            -33.417112113066864,
+            -63.266981802820105
+        ],
+        "region": "Córdoba / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "AV. SABATTINI ACCESO ESTE 1500 -1600 - LA CARLOTA",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "COLONIA BISMARK",
+        "provincia": "Córdoba",
+        "coordenadas": [
+            -33.297561711510646,
+            -62.718912582291516
+        ],
+        "region": "Córdoba / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "colonia Bismarck - Jujuy y Guemes - (CP 2652) - Colonia Bismarck - Cordoba Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "LABOULAYE",
+        "provincia": "Córdoba",
+        "coordenadas": [
+            -34.19589859867183,
+            -63.42181873203456
+        ],
+        "region": "Córdoba / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta Provincial Numero 4 km 208,5 - Laboulaye - Cordoba",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "CORONEL BAIGORRIA",
+        "provincia": "Córdoba",
+        "coordenadas": [
+            -32.847670178440005,
+            -64.35591990773763
+        ],
+        "region": "Córdoba / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion Coronel Baigorria - (CP 5811) - Cnel. Baigorria - Cordoba Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "GENERAL CABRERA",
+        "provincia": "Córdoba",
+        "coordenadas": [
+            -32.81727444797321,
+            -63.88921585242374
+        ],
+        "region": "Córdoba / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Gral Cabrera - Ruta 158 y Ruta Prov. E90 (CP 5809) - Gral Cabrera - Cordoba Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "GENERAL ROCA",
+        "provincia": "Córdoba",
+        "coordenadas": [
+            -32.731294284356856,
+            -61.91803605481014
+        ],
+        "region": "Córdoba / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Gral Roca - 25 de Mayo 325 (CP 2592) - General Roca - Cordoba Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "LAGUNA LARGA (DEPÓSITO)",
+        "provincia": "Córdoba",
+        "coordenadas": [
+            -31.78279710849012,
+            -63.79632689279962
+        ],
+        "region": "Córdoba / Región NORTE",
+        "descripcion": "DEPÓSITO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Pte. H. Irigoyen 1143 (5974) Laguna Larga, Cordoba Prov.",
+        "imagen": "./assets/img/nutrien-depos.svg"
+    },
+    {
+        "nombre": "RIO SEGUNDO",
+        "provincia": "Córdoba",
+        "coordenadas": [
+            -31.66078619845592,
+            -63.8513122643521
+        ],
+        "region": "Córdoba / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Colectora autopista Cordoba-Pilar Dr Rene Favaloro 3553\" km 665 - Cp 5960. Localidad. Rio Segundo",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "VILLA MARIA",
+        "provincia": "Córdoba",
+        "coordenadas": [
+            -32.386897752914216,
+            -63.19879323372028
+        ],
+        "region": "Córdoba / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Calle Buenos Aires y Autopista Cordoba Rosario (CP 5900) - Villa Maria - Cordoba Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "PARANA",
+        "provincia": "Entre Rios",
+        "coordenadas": [
+            -31.75393427663576,
+            -60.39956999968609
+        ],
+        "region": "Entre Rios / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Calle Ruta Nacional 168 km. 506.30 - Acceso Norte - Municipio Colonia Avellaneda-Paraná-Entre Rios",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "VICTORIA",
+        "provincia": "Entre Rios",
+        "coordenadas": [
+            -32.63065389270683,
+            -60.11688003899174
+        ],
+        "region": "Entre Rios / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Parque Industrial Victoria - Ruta 11 Km 120 (CP 3153) - Victoria - Entre Rios Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "VILLAGUAY",
+        "provincia": "Entre Rios",
+        "coordenadas": [
+            -31.84099695512613,
+            -59.02625555016224
+        ],
+        "region": "Entre Rios / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "S. Martin y M. Alverdinos (3240) Villaguay, Entre Rios Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "GENERAL PICO",
+        "provincia": "La Pampa",
+        "coordenadas": [
+            -35.67916873561454,
+            -63.78992914557912
+        ],
+        "region": "La Pampa / Región SUR",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta Prov. 4 A 450 mts de R1 (6360) Gral Pico, La Pampa Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "VILLANUEVA",
+        "provincia": "Mendoza",
+        "coordenadas": [
+            -32.9368074802178,
+            -68.77814412883488
+        ],
+        "region": "Mendoza / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Villa Nueva de Guaym (CP 5521) - Mendoza Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "ROSARIO DE LA FRONTERA",
+        "provincia": "Salta",
+        "coordenadas": [
+            -25.79372367915761,
+            -64.95132145930083
+        ],
+        "region": "Salta / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "ROSARIO DE LA FRONTERA Ruta 9 km 1423 (4190) Pcia. De Salta",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "RAFAELA",
+        "provincia": "Santa Fe",
+        "coordenadas": [
+            -31.32331270974293,
+            -61.52209998578846
+        ],
+        "region": "Santa Fe / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta Nac 34 km 213 - Susana (CP2301) - Prov. Santa Fe -Rafaela",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "CHAPUY",
+        "provincia": "Santa Fe",
+        "coordenadas": [
+            -33.79624169159849,
+            -61.746593368734814
+        ],
+        "region": "Santa Fe / Región CENTRO",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estancia Chapuy (PC2603) Chapuy (CP 3000) Santa Fe Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "RUFINO (DEPÓSITO)",
+        "provincia": "Santa Fe",
+        "coordenadas": [
+            -34.262702750490206,
+            -62.685651042930566
+        ],
+        "region": "Santa Fe / Región CENTRO",
+        "descripcion": "DEPÓSITO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta Nacional N°33 km 538, Rufino, Santa Fe",
+        "imagen": "./assets/img/nutrien-depos.svg"
+    },
+    {
+        "nombre": "CASILDA",
+        "provincia": "Santa Fe",
+        "coordenadas": [
+            -33.07440743732458,
+            -61.19960802051816
+        ],
+        "region": "Santa Fe / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Casilda - Ruta Nacional 33 Km 745,5 (CP 2170) - Casilda - Santa Fe Prov. PLANTA / Acopio",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "GALVEZ",
+        "provincia": "Santa Fe",
+        "coordenadas": [
+            -32.036935431814285,
+            -61.18834760326155
+        ],
+        "region": "Santa Fe / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta 80 Acceso Galvez (CP 2552) - Galvez - Santa Fe Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "LA CALIFORNIA",
+        "provincia": "Santa Fe",
+        "coordenadas": [
+            -32.54476640641819,
+            -61.549445778402394
+        ],
+        "region": "Santa Fe / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Predio Estacion La California - (CP 2520) Las Rosas - Santa Fe Prov.",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    },
+    {
+        "nombre": "PEYRANO",
+        "provincia": "Santa Fe",
+        "coordenadas": [
+            -33.517050841788794,
+            -60.77760364553287
+        ],
+        "region": "Santa Fe / Región NORTE",
+        "descripcion": "AGROCENTRO NUTRIEN AG SOLUTIONS ARGENTINA SA",
+        "direccion": "Ruta Provincial 18, km 57. Frente a acceso Peyrano",
+        "imagen": "./assets/img/nutrien-agros.svg"
+    }
+]
